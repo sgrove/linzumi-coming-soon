@@ -19,7 +19,7 @@ export default function IndexPage() {
       <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
         Linzumi
       </h1>
-      <h2 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
+      <h2 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-3xl sm:max-w-lg">
         Craft serverless ML APIs in minutes, with seamless support for Replicate, HuggingFace & OpenAI
       </h2>
 
