@@ -20,8 +20,7 @@ export default function IndexPage() {
         Linzumi
       </h1>
       <h2 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-        Combine models from Replicate, HuggingFace, OpenAI
-        to create a bulletproof production API in seconds.
+        Craft serverless ML APIs in minutes, with seamless support for Replicate, HuggingFace & OpenAI
       </h2>
 
       <div className="flex max-w-[980px] flex-col items-center gap-2">
@@ -30,7 +29,7 @@ export default function IndexPage() {
         }} />
         <div className="max-w-[700px] text-lg text-muted-foreground">
           <ul>
-            <li>Try and remix public flows, import them into your own API instantly</li>
+            <li>Try public flows, customize for your needs, then import into your own API instantly</li>
             <li>Compile out a type-safe client for use in Node, Python, or mobile applications</li>
             <li>Built in visualizer and debugger so you can see every step of every API invocation</li>
             <li>Trigger flows via API call, webhooks, or even emails</li>
