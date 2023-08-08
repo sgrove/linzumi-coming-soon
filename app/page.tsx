@@ -31,7 +31,7 @@ export default function IndexPage() {
           <ul>
             <li>Try public flows, customize for your needs, then import into your own API instantly</li>
             <li>Compile out a type-safe client for use in Node, Python, or mobile applications</li>
-            <li>Built in visualizer and debugger so you can see every step of every API invocation</li>
+            <li>Built-in visualizer and debugger so you can see every step of every API invocation</li>
             <li>Trigger flows via API call, webhooks, or even emails</li>
             <li>Send the results of every flow to your application, to an outgoing webhook, or an email address</li>
           </ul>
