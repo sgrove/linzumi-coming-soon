@@ -1,39 +1,44 @@
+"use client"
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
 
+import LinzumiLogoLight from "@/components/images/linzumi_logo_light.jpg"
+import LinzumiLogoDark from "@/components/images/linzumi_logo_dark.jpg"
+import Image from "next/image"
+import { useTheme } from "next-themes"
+
 export default function IndexPage() {
+  const { setTheme, theme } = useTheme()
+
+  const image = theme === "dark" ? LinzumiLogoDark : LinzumiLogoLight
+
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-      <div className="flex max-w-[980px] flex-col items-start gap-2">
+    <section className="container flex flex-col items-center gap-6 pb-8 pt-6 md:py-10">
+      <div className="flex max-w-[980px] flex-col items-center gap-2">
+        <Image alt="Linzumi Logo" src={image} width={600} height={600} style={{
+          borderRadius: "50%",
+        }} />
+
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          Beautifully designed components <br className="hidden sm:inline" />
-          built with Radix UI and Tailwind CSS.
+          Combine models from Replicate, HuggingFace, OpenAI <br className="hidden sm:inline" />
+          to create a bulletproof production API in seconds.
         </h1>
-        <p className="max-w-[700px] text-lg text-muted-foreground">
-          Accessible and customizable components that you can copy and paste
-          into your apps. Free. Open Source. And Next.js 13 Ready.
-        </p>
+        <div className="flex gap-4">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0TL-gQfCLoU?start=2" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        </div>
+        <div className="max-w-[700px] text-lg text-muted-foreground">
+          <ul>
+            <li>Try and remix public flows, import them into your own API instantly</li>
+            <li>Compile out a type-safe client for use in Node, Python, or mobile applications</li>
+            <li>Built in visualizer and debugger so you can see every step of every API invocation</li>
+            <li>Trigger flows via API call, webhooks, or even emails</li>
+            <li>Send the results of every flow to your application, to an outgoing webhook, or an email address</li>
+          </ul>
+        </div>
       </div>
-      <div className="flex gap-4">
-        <Link
-          href={siteConfig.links.docs}
-          target="_blank"
-          rel="noreferrer"
-          className={buttonVariants()}
-        >
-          Documentation
-        </Link>
-        <Link
-          target="_blank"
-          rel="noreferrer"
-          href={siteConfig.links.github}
-          className={buttonVariants({ variant: "outline" })}
-        >
-          GitHub
-        </Link>
-      </div>
-    </section>
+
+    </section >
   )
 }
