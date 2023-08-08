@@ -17,20 +17,17 @@ export default function IndexPage() {
   return (
     <section className="container flex flex-col items-center gap-6 pb-8 pt-6 md:py-10">
       <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-        Linzumi: Coming soon.
+        Linzumi
       </h1>
+      <h2 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
+        Combine models from Replicate, HuggingFace, OpenAI
+        to create a bulletproof production API in seconds.
+      </h2>
+
       <div className="flex max-w-[980px] flex-col items-center gap-2">
         <Image alt="Linzumi Logo" src={image} width={600} height={600} style={{
           borderRadius: "50%",
         }} />
-
-        <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          Combine models from Replicate, HuggingFace, OpenAI <br className="hidden sm:inline" />
-          to create a bulletproof production API in seconds.
-        </h1>
-        <div className="flex gap-4">
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0TL-gQfCLoU?start=2" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        </div>
         <div className="max-w-[700px] text-lg text-muted-foreground">
           <ul>
             <li>Try and remix public flows, import them into your own API instantly</li>
@@ -40,6 +37,13 @@ export default function IndexPage() {
             <li>Send the results of every flow to your application, to an outgoing webhook, or an email address</li>
           </ul>
         </div>
+        <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
+          Coming soon, check out our preview below
+        </h1>
+        <div className="flex gap-4">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0TL-gQfCLoU?start=2" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        </div>
+
       </div>
 
     </section >
