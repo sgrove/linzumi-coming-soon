@@ -8,5 +8,6 @@ export const siteConfig = {
     twitter: "https://twitter.com/sgrove",
     github: "https://github.com/sgrove",
     docs: "https://ui.shadcn.com",
+    linkedIn: "https://www.linkedin.com/company/linzumi",
   },
 }

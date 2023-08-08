@@ -16,6 +16,9 @@ export default function IndexPage() {
 
   return (
     <section className="container flex flex-col items-center gap-6 pb-8 pt-6 md:py-10">
+      <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
+        Linzumi: Coming soon.
+      </h1>
       <div className="flex max-w-[980px] flex-col items-center gap-2">
         <Image alt="Linzumi Logo" src={image} width={600} height={600} style={{
           borderRadius: "50%",

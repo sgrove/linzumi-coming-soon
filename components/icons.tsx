@@ -3,6 +3,7 @@ import {
   Moon,
   SunMedium,
   Twitter,
+  Linkedin,
   type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -11,6 +12,7 @@ export type Icon = LucideIcon
 export const Icons = {
   sun: SunMedium,
   moon: Moon,
+  linkedin: Linkedin,
   twitter: Twitter,
   // @ts-expect-error
   logo: (props) => (
