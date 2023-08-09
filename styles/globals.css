@@ -82,8 +82,27 @@
 
 /* For mailchimp form */
 #mc_embed_signup {
-  background: #fff;
-  clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
-  width: px;
+  #mc-embedded-subscribe-form {
+    margin: 0;
+  }
+  #mc_embed_signup_scroll {
+    .mc-field-group {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
+
+.section-margin {
+  margin-top: 4rem;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.list-disc {
+  list-style: disc;
+  padding-left: 1.5rem;
 }
