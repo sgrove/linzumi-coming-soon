@@ -48,13 +48,6 @@ export default function IndexPage() {
             rel="stylesheet"
             type="text/css"
           />
-          <style
-            type="text/css"
-            dangerouslySetInnerHTML={{
-              __html:
-                "\n        #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: px;}\n        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\n           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n"
-            }}
-          />
           <div id="mc_embed_signup">
             <form
               action="https://gmail.us21.list-manage.com/subscribe/post?u=1d9a63fb66443660fd83b72fe&id=6af0049181&f_id=00b52fe7f0"
@@ -120,8 +113,8 @@ export default function IndexPage() {
                   aria-hidden="true"
                   style={{ position: "absolute", left: "-5000px" }}
                 >
-          /* real people should not fill this in and expect good things - do not
-                  remove this or risk form bot signups */
+                  {/* real people should not fill this in and expect good things - do not
+                  remove this or risk form bot signups */}
                   <input
                     type="text"
                     name="b_1d9a63fb66443660fd83b72fe_6af0049181"
